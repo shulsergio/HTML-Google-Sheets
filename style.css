@@ -64,8 +64,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 270px;
-    margin: 5px;
+    width: 320px;
+    margin: 20px;
     background: rgba(0, 0, 0,.4);
 padding: 10px;
 border-radius: 30px;
@@ -80,6 +80,7 @@ font-size: 35px;
     display: flex;
         align-items: baseline;
         flex-wrap: wrap;
+        font-size: 18px;
 }
 .login-form input {
     width: 40px;
