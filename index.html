@@ -23,7 +23,38 @@
     <title>html to Google</title>
   </head>
   <body>
-    <div class="container"></div>
-    <script type="module" src="./main.js"></script>
+    <div class="container">
+      <form action="#" class="login-form" name="submit-to-google-sheet">
+        <h2>login form</h2>
+        <input type="text" name="Name" id="Name" required autocomplete="off" />
+        <input
+          type="text"
+          name="first-index"
+          id="first-index"
+          required
+          autocomplete="off"
+        />
+        <input
+          type="text"
+          name="second-index"
+          id="second-index"
+          required
+          autocomplete="off"
+        />
+        <button type="submit">OK</button>
+      </form>
+    </div>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyhluWBPslbopX1L5OBIKqz5HTf2o1aJxik-0h73Ur3ubP8Hbj7TvcZb1Bd_On4_NXkMg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
