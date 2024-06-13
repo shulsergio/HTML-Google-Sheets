@@ -64,9 +64,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 320px;
+    width: 340px;
     margin: 15px;
     background: #213690;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 padding: 10px;
 border-radius: 30px;
 }
