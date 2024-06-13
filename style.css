@@ -53,34 +53,50 @@ textarea:focus {
 body {
     width: 100%;
     /* height: 100%; */
-    background-color: #999;
+    background-color: #bffdff;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     color: black;
 
 }
 .login-form{
-        display: flex;
-            justify-content: center;
-            align-items: center;
-                flex-direction: column;
-    width: 400px;
-    background: rgba(0, 0, 0,.6);
-padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 270px;
+    margin: 5px;
+    background: rgba(0, 0, 0,.4);
+padding: 10px;
 border-radius: 30px;
 }
 .login-form h2{
-margin-bottom: 30px;
+margin-bottom: 10px;
 color: #fff;
 font-size: 35px;
 }
+.label{
+    margin: 0 auto;
+    display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+}
 .login-form input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
+    width: 40px;
+    padding: 4px 0 4px 8px;
+    margin: 0 5px 15px 0;   
     border-radius: 4px;
     outline: none;
     border: none;
+}
+#userName{
+    width: 160px;
+}
+
+.label .text-team{
+    color: #000;
+    font-size: 12px;
+    margin: 0 5px;
 }
 .login-form button{
     width: 50%;
@@ -91,8 +107,7 @@ font-size: 35px;
     border-radius: 4px;
     color: black;
     background-color: white;
-transition: background-color 0.3s, color 0.3s;;
-
+transition: background-color 0.3s, color 0.3s;
 }
 .login-form button:hover {
 background-color: #555;
