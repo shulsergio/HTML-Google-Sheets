@@ -67,8 +67,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-width: 340px;
-    margin: 40px 15px 15px 15px;
+    max-width: 340px;
+    margin: 40px auto;
     background: #213690;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 padding: 10px;
@@ -109,7 +109,7 @@ font-size: 35px;
     font-size: 16px;
     margin: 0 5px;
 }
-.login-form button{
+.login-form button {
     width: 50%;
     height: 30px;
     margin-bottom: 20px;
@@ -118,13 +118,13 @@ font-size: 35px;
     cursor: pointer;
     border-radius: 4px;
     color: black;
-        font-weight: 700;
+    font-weight: 700;
     background-color: white;
-transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
+
 .login-form button:hover {
-background-color: #385ef3;
+    background-color: #385ef3;
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4)
-
 }
