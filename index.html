@@ -25,16 +25,19 @@
   <body>
     <div class="container">
       <form action="#" class="login-form" name="submit-to-google-sheet">
-        <h2>Login Form</h2>
+        <h2>Prediction</h2>
+
+        <!-- ЗАКРЫТИЕ ФОРМЫ
         <div class="label">
-          <span class="text text-team"> Пора смотреть футбол, </span>
-          <span class="text text-team"> а не в телефон тыкать!!! </span>
-        </div>
-        <!-- <div class="label">
-          <span class="text text-team"> Угадай результаты матчей </span>
+          <span class="text-all text-close"> Пора смотреть футбол, </span>
+          <span class="text-all text-close"> а не в телефон тыкать!!! </span>
+        </div> -->
+
+        <div class="label">
+          <span class="text-all text"> Угадай результаты матчей </span>
         </div>
         <div class="label">
-          <span class="text-team">Name</span
+          <span class="text-all">Name</span
           ><input
             type="text"
             name="userName"
@@ -43,34 +46,78 @@
             autocomplete="off"
           />
         </div>
+        <!-- -----------------1----------------- -->
+        <span class="text-all text-group">Группа А</span>
+        <div class="label"></div>
         <div class="label">
-          <span class="text-team text-group">Группа А</span>
-        </div>
-        <div class="label">
-          <span class="text-team">Германия</span>
-
+          <span class="text-all">Венгрия</span>
           <input
             type="number"
-            name="first-score"
-            id="first-score"
+            name="score1"
+            id="score1"
             required
             autocomplete="off"
           />
           <input
             type="number"
-            name="second-score"
-            id="second-score"
+            name="score2"
+            id="score2"
             required
             autocomplete="off"
           />
-          <span class="text-team">Шотландия</span>
+          <span class="text-all">Швейцария</span>
         </div>
-        <button type="submit">OK</button> -->
+        <!-- ---------------------------------- -->
+        <!-- -----------------2----------------- -->
+        <span class="text-all text-group">Группа В</span>
+        <div class="label"></div>
+        <div class="label">
+          <span class="text-all">Испания</span>
+          <input
+            type="number"
+            name="score3"
+            id="score3"
+            required
+            autocomplete="off"
+          />
+          <input
+            type="number"
+            name="score4"
+            id="score4"
+            required
+            autocomplete="off"
+          />
+          <span class="text-all">Хорватия</span>
+        </div>
+        <!-- ---------------------------------- -->
+        <!-- -----------------3----------------- -->
+        <span class="text-all text-group">Группа В</span>
+        <div class="label"></div>
+        <div class="label">
+          <span class="text-all">Италия</span>
+          <input
+            type="number"
+            name="score5"
+            id="score5"
+            required
+            autocomplete="off"
+          />
+          <input
+            type="number"
+            name="score6"
+            id="score6"
+            required
+            autocomplete="off"
+          />
+          <span class="text-all">Албания</span>
+        </div>
+        <!-- ---------------------------------- -->
+        <button type="submit">OK</button>
       </form>
     </div>
     <script>
       const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyMuri0b0ZkDrbzwa_d6hpQYQno4MY060c7IhCXyBDJdU9W8nzyYWR69EErVvGkrV99cA/exec";
+        "https://script.google.com/macros/s/AKfycbx8JU9b1Ja7jUr8Qagd3VGBWaaE8jb2c6vlDrI684Yxu1kO9OURj01clQaGPSiRddJHog/exec";
       const form = document.forms["submit-to-google-sheet"];
 
       form.addEventListener("submit", (e) => {

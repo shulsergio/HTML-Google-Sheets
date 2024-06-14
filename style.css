@@ -49,6 +49,9 @@ input:focus,
 textarea:focus {
     outline: none;
 }
+:root {
+    --main-color-yellow: #f9bf4b;
+}
 
 body {
     width: 100%;
@@ -81,11 +84,10 @@ color: #fff;
 font-size: 35px;
 }
 .label{
-    margin: 0 auto;
+
     display: flex;
-        align-items: baseline;
-        flex-wrap: wrap;
-        font-size: 18px;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 .login-form input {
     width: 40px;
@@ -104,23 +106,31 @@ font-size: 35px;
 #userName{
     width: 162px;
 }
-.label .text-team {
+.text-all {
     color: #fff;
     font-size: 16px;
-    margin: 0 5px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
-.label .text {
+
+.text-team{
+    margin: 0 auto;
+}
+
+.text {
     margin-bottom: 40px;
 }
 
-.label .text-group{
+.text-group{
     background-color: #fff;
     font-weight: 600;
     padding: 2px;
   color: #213690;
   border: none;
   border-radius: 4px;
-margin-left: auto;
+margin-right: 220px;
+margin-bottom: 10px;
+
 }
 
 .login-form button {
@@ -128,17 +138,17 @@ margin-left: auto;
     height: 30px;
     margin-bottom: 20px;
     outline: none;
-    border: none;
+        border: 1px solid var(--main-color-yellow);
     cursor: pointer;
-    border-radius: 4px;
-    color: black;
+    border-radius: 9999px;
+        color: var(--main-color-yellow);
     font-weight: 700;
-    background-color: white;
+    background-color: #385ef3;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
 .login-form button:hover {
-    background-color: #385ef3;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4)
+    background-color: var(--main-color-yellow);
+    color: #000036;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6)
 }
