@@ -128,7 +128,7 @@ html {
     width: 180px;
     height: 80px;
     margin: 0 auto;
-    padding: 5px 10px;
+    padding: 4px 4px;
     border-radius: 20px;
     color: var(--main-color-yellow);
     border: 1px solid var(--main-color-yellow);
@@ -138,14 +138,15 @@ html {
 }
 .ua{
 background: linear-gradient(to bottom, #0057b8 50%, #ffd700 50%);
-
+    width: 240px;
+        height: 120px;
 }
 
 .clickable {
     width: 100%;
     height: 100%;
     display: flex;
-    padding: 5px;
+    padding: 2px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -286,4 +287,39 @@ background: linear-gradient(to bottom, #0057b8 50%, #ffd700 50%);
     background-color: var(--main-color-yellow);
     color: #000036;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6)
+}
+
+.matches-list{
+    display: flex;
+    flex-direction: column;
+        margin-top: 20px;
+align-items: center;
+}
+.matches-item{
+
+        width: 240px;
+    margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            color: var(--main-color-yellow);
+            border: 1px solid var(--main-color-yellow);
+            background-color: #213690;
+            text-align: center;
+}
+.new-item{
+            width: 280px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+                border-radius: 8px;
+                            border: 4px solid green;
+}
+.special-item{
+margin-bottom: 5px;
+padding: 5px 20px;
+
+
+}
+.special-item-m
+{font-size: 16px;
+    font-weight: 800;
 }
