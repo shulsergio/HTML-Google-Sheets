@@ -104,7 +104,7 @@ html {
 
 }
 .text-header{
-    padding: 8px 0;
+    padding: 16px 0;
             /* margin: 0 auto; */
                 text-align: center;
                 font-size: 24px;
@@ -135,6 +135,10 @@ html {
     background-color: #213690;
     text-align: center;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
+}
+.ua{
+background: linear-gradient(to bottom, #0057b8 50%, #ffd700 50%);
+
 }
 
 .clickable {
