@@ -115,12 +115,7 @@
               <span class="text-all">Албания</span>
             </div>
             <!-- ---------------------------------- -->
-            <div class="matches-item new-item">
-              <p class="special-item">special match</p>
-              <p lass="special-item special-item-m">
-                Sporting u10 - 19.45 - Sevilla u10
-              </p>
-            </div>
+            <span class="special-item"></span>
             <button type="submit">OK</button>
           </form>
         </div>
@@ -130,11 +125,13 @@
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbx8JU9b1Ja7jUr8Qagd3VGBWaaE8jb2c6vlDrI684Yxu1kO9OURj01clQaGPSiRddJHog/exec";
       const form = document.forms["submit-to-google-sheet"];
-
+      const textOk = document.querySelector(".special-item");
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
+          .then((response) => {
+            textOk.innerHTML = "Your data is uploaded!!!";
+          })
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
