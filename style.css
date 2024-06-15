@@ -81,7 +81,7 @@ html {
 @media only screen and (min-width: 375px) {
     .container {
         max-width: 375px;
-        padding: 0 20px;
+        padding: 0 5px;
     }
 }
 
@@ -322,4 +322,44 @@ padding: 5px 20px;
 .special-item-m
 {font-size: 16px;
     font-weight: 800;
+}
+
+
+/* ------about */
+.about-container{
+    margin: 0 auto;
+}
+.about-container h2{
+    margin: 15px 10px;
+    color: var(--main-color-yellow);
+}
+.text-about{
+max-width: 340px;
+        color: var(--main-color-yellow);
+        font-size: 13px;
+        font-weight: normal;
+        text-align: justify;
+}
+
+.table-stadio {
+    margin-top: 10px;
+    width: 340px;
+    border-collapse: collapse;
+    text-align: left;
+font-size: 11px;
+font-weight: normal;
+}
+
+th,
+td {
+    border: 1px solid #f9bf4b;
+    padding: 8px;
+    color: #f9bf4b;;
+}
+
+th {
+    background-color: #f1f1f1;
+    color: #213690;
+    font-size: 13px;
+        font-weight: 600;
 }
