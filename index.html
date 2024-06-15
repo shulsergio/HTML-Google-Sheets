@@ -20,119 +20,34 @@
     />
     <!-- ---- -->
     <link rel="stylesheet" href="./style.css" />
-    <title>html to Google</title>
+    <title>Eurozona</title>
   </head>
   <body>
     <main>
       <section class="section">
         <div class="container">
-          <div class="back">
-            <a href="./index.html">Go back</a>
+          <div class="label">
+            <h1>Football pub</h1>
+            <span class="text-all">All about Euro 2024</span>
           </div>
-          <form action="#" class="login-form" name="submit-to-google-sheet">
-            <h2>Prediction</h2>
-
-            <!-- ЗАКРЫТИЕ ФОРМЫ
-        <div class="label">
-          <span class="text-all text-close"> Пора смотреть футбол, </span>
-          <span class="text-all text-close"> а не в телефон тыкать!!! </span>
-        </div> -->
-
-            <div class="label">
-              <span class="text-all text"> Угадай результаты матчей </span>
-            </div>
-            <div class="label">
-              <span class="text-all">Name</span
-              ><input
-                type="text"
-                name="userName"
-                id="userName"
-                required
-                autocomplete="off"
-              />
-            </div>
-            <!-- -----------------1----------------- -->
-            <span class="text-all text-group">Группа А</span>
-            <div class="label"></div>
-            <div class="label">
-              <span class="text-all">Венгрия</span>
-              <input
-                type="number"
-                name="score1"
-                id="score1"
-                required
-                autocomplete="off"
-              />
-              <input
-                type="number"
-                name="score2"
-                id="score2"
-                required
-                autocomplete="off"
-              />
-              <span class="text-all">Швейцария</span>
-            </div>
-            <!-- ---------------------------------- -->
-            <!-- -----------------2----------------- -->
-            <span class="text-all text-group">Группа В</span>
-            <div class="label"></div>
-            <div class="label">
-              <span class="text-all">Испания</span>
-              <input
-                type="number"
-                name="score3"
-                id="score3"
-                required
-                autocomplete="off"
-              />
-              <input
-                type="number"
-                name="score4"
-                id="score4"
-                required
-                autocomplete="off"
-              />
-              <span class="text-all">Хорватия</span>
-            </div>
-            <!-- ---------------------------------- -->
-            <!-- -----------------3----------------- -->
-            <span class="text-all text-group">Группа В</span>
-            <div class="label"></div>
-            <div class="label">
-              <span class="text-all">Италия</span>
-              <input
-                type="number"
-                name="score5"
-                id="score5"
-                required
-                autocomplete="off"
-              />
-              <input
-                type="number"
-                name="score6"
-                id="score6"
-                required
-                autocomplete="off"
-              />
-              <span class="text-all">Албания</span>
-            </div>
-            <!-- ---------------------------------- -->
-            <button type="submit">OK</button>
-          </form>
+          <div class="label">
+            <ul class="all-list">
+              <li class="all-item">
+                <a href="./main-prd.html" class="clickable">Prediction</a>
+              </li>
+              <li class="all-item not-clickable">
+                <a href="#" class="clickable">Matches</a>
+              </li>
+              <li class="all-item not-clickable">
+                <a href="#" class="clickable">Table</a>
+              </li>
+              <li class="all-item not-clickable">
+                <a href="#" class="clickable">About Euro</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbx8JU9b1Ja7jUr8Qagd3VGBWaaE8jb2c6vlDrI684Yxu1kO9OURj01clQaGPSiRddJHog/exec";
-      const form = document.forms["submit-to-google-sheet"];
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
   </body>
 </html>
