@@ -111,8 +111,9 @@ html {
                 font-size: 24px;
                 font-weight: 700;
                 color: #fff;
-
 }
+
+
 .label span {
     margin: 0 auto;
     margin-bottom: 20px;
@@ -137,13 +138,18 @@ html {
     text-align: center;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease;
 }
+
+/* -------------- флаг и текст цветами Украины */
 .ua{
 background: linear-gradient(to bottom, #0057b8 50%, #ffd700 50%);
- color: black;
-
-/* width: 240px;
-        height: 120px; */
 }
+.ua-color {
+    background: linear-gradient(to bottom, #ffd700, 50%, #0057b8 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* ------------- */
 
 .clickable {
     width: 100%;
