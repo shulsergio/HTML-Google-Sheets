@@ -53,6 +53,7 @@ textarea:focus {
 
 :root {
     --main-color-yellow: #f9bf4b;
+    --main-color-blue:#213690;
 }
 
 body {
@@ -359,4 +360,59 @@ th {
     color: #213690;
     font-size: 13px;
         font-weight: 600;
+}
+
+/* ----------- TABLE--------- */
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 5px;
+    }
+}
+.table-container {
+    padding: 0;
+}
+
+.table-container h2 {
+    margin: 15px 10px;
+    color: var(--main-color-yellow);
+}
+
+.table-container h3 {
+    margin: 5px 10px;
+    color: var(--main-color-blue);
+}
+
+.table-group-main {
+    margin: 5px;
+    padding: 15px;
+    width: 95%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+
+}
+
+.table-group-main .euro-table {
+    /* color: var(--main-color-blue); */
+    width: 100%;
+    justify-content: center;
+    border: 1px solid #f9bf4b;
+        border-collapse: collapse;
+}
+.euro-table th:nth-child(1) {
+    width: 7%;
+}
+
+.euro-table th:nth-child(2) {
+    width: 63%;
+}
+
+.euro-table th:nth-child(3) {
+    width: 15%;
+}
+
+.euro-table th:nth-child(4) {
+    width: 15%;
 }
