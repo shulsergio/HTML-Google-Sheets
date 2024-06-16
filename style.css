@@ -117,6 +117,7 @@ html {
 .label span {
     margin: 0 auto;
     margin-bottom: 20px;
+
 }
 
 .all-list {
@@ -144,10 +145,9 @@ html {
 background: linear-gradient(to bottom, #0057b8 50%, #ffd700 50%);
 }
 .ua-color {
-    background: linear-gradient(to bottom, #ffd700, 50%, #0057b8 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+color:whitesmoke;
+    font-weight: 900;
+
 }
 /* ------------- */
 
@@ -161,9 +161,10 @@ background: linear-gradient(to bottom, #0057b8 50%, #ffd700 50%);
     align-items: center;
     flex-direction: column;
     gap: 5px;
-    color: inherit;
+    /* color: inherit; */
+        /* font-weight: 600; */
     font-size: 24px;
-    font-weight: 600;
+
 }
 
 .not-clickable {
