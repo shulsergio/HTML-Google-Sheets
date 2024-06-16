@@ -145,8 +145,13 @@ html {
 background: linear-gradient(to bottom, #0057b8 50%, #ffd700 50%);
 }
 .ua-color {
-color:whitesmoke;
-    font-weight: 900;
+background: linear-gradient(to bottom, #ffd700 50%, #0057b8 50% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    font-weight: 800;
+    font-size: 32px;
 
 }
 /* ------------- */
@@ -162,7 +167,7 @@ color:whitesmoke;
     flex-direction: column;
     gap: 5px;
     /* color: inherit; */
-        /* font-weight: 600; */
+        font-weight: 800;
     font-size: 24px;
 
 }
