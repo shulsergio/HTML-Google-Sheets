@@ -108,7 +108,7 @@ html {
     padding: 16px 0;
             /* margin: 0 auto; */
                 text-align: center;
-                font-size: 24px;
+                font-size: 40px;
                 font-weight: 700;
                 color: #fff;
 }
@@ -151,7 +151,6 @@ background: linear-gradient(to bottom, #ffd700 50%, #0057b8 50% );
     background-clip: text;
     /* text-fill-color: transparent; */
     font-weight: 800;
-    font-size: 32px;
 
 }
 /* ------------- */
