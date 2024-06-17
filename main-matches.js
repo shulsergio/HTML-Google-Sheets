@@ -84,8 +84,8 @@ const allFixtures = [
     HomeTeam: "Romania",
     AwayTeam: "Ukraine",
     Group: "Group E",
-    HomeTeamScore: null,
-    AwayTeamScore: null,
+    HomeTeamScore: 3,
+    AwayTeamScore: 0,
   },
   {
     MatchNumber: 9,
@@ -95,8 +95,8 @@ const allFixtures = [
     HomeTeam: "Belgium",
     AwayTeam: "Slovakia",
     Group: "Group E",
-    HomeTeamScore: null,
-    AwayTeamScore: null,
+    HomeTeamScore: 0,
+    AwayTeamScore: 1,
   },
   {
     MatchNumber: 10,
@@ -106,8 +106,8 @@ const allFixtures = [
     HomeTeam: "Austria",
     AwayTeam: "France",
     Group: "Group D",
-    HomeTeamScore: null,
-    AwayTeamScore: null,
+    HomeTeamScore: 0,
+    AwayTeamScore: 1,
   },
   {
     MatchNumber: 11,
@@ -396,22 +396,47 @@ const allFixtures = [
     AwayTeamScore: null,
   },
 ];
-const newHtmlData = document.querySelector(".matches-list");
+const newHtmlData = document.querySelector(".js-tbody-matches");
+const TeamFromTable = document.querySelector(".js-team-name");
 
-function onCreateHtmlData() {
+function onCreateHtmlData(ChoiceTeam = "all") {
   return allFixtures
-    .map(({ HomeTeam, AwayTeam, Group, HomeTeamScore, AwayTeamScore }) => {
-      HomeTeamScore = HomeTeamScore === null ? " " : HomeTeamScore;
-      AwayTeamScore = AwayTeamScore === null ? " " : AwayTeamScore;
-      let xDone = HomeTeamScore === " " ? " " : "-";
-      return ` <li class="matches-item">
-                <span>${Group} </span>
-                <span>${HomeTeam} </span>
-                <span>${AwayTeam} </span>
-                <span>${HomeTeamScore}${xDone}${AwayTeamScore}</span>
-              </li>`;
-    })
+    .map(
+      ({
+        DateUtc,
+        HomeTeam,
+        AwayTeam,
+        Group,
+        HomeTeamScore,
+        AwayTeamScore,
+      }) => {
+        let newDate = DateUtc.slice(5, 10);
+        HomeTeamScore = HomeTeamScore === null ? " " : HomeTeamScore;
+        AwayTeamScore = AwayTeamScore === null ? " " : AwayTeamScore;
+        let xDone = HomeTeamScore === " " ? " " : "-";
+        if (
+          ChoiceTeam == "all" ||
+          ChoiceTeam === HomeTeam ||
+          ChoiceTeam === AwayTeam
+        ) {
+          return `<tr>
+                  <td>${DateUtc.slice(5, 10)}</td>
+                  <td>${Group.slice(6, 7)}</td>
+                  <td class="table-team-name js-team-name">${HomeTeam}</td>
+                  <td class="table-team-name js-team-name">${AwayTeam}</td>
+                  <td>${HomeTeamScore}</td>
+                  <td>${AwayTeamScore}</td>
+                </tr>`;
+        } else {
+          return;
+        }
+      }
+    )
     .join("");
 }
 
-newHtmlData.insertAdjacentHTML("beforeend", onCreateHtmlData());
+// function onChoiceTeamFromTable(Tam){
+//   const
+// }
+
+newHtmlData.insertAdjacentHTML("beforeend", onCreateHtmlData("all"));

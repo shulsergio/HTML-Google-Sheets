@@ -75,6 +75,10 @@ body {
     padding: 0;
     margin: 0 auto;
 }
+.new-container{
+    display: flex;
+    justify-content: space-between;
+}
 
 html {
     scroll-behavior: smooth;
@@ -166,7 +170,7 @@ background: linear-gradient(to bottom, #ffd700 50%, #0057b8 50% );
     align-items: center;
     flex-direction: column;
     gap: 5px;
-    /* color: inherit; */
+    color: inherit;
         font-weight: 800;
     font-size: 24px;
 
@@ -464,9 +468,9 @@ font-weight: 600;
     color: var(--main-color-yellow);
 }
 
-.table-scorer-main {
+.tables-main {
     margin: 5px;
-    padding: 15px;
+    padding: 10px;
     width: 95%;
     max-width: 700px;
     background-color: #fff;
@@ -474,7 +478,7 @@ font-weight: 600;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
-.table-scorer-main .scorer-table {
+.tables-main .scorer-table {
     width: 100%;
     justify-content: center;
     border: 1px solid #f9bf4b;
@@ -505,4 +509,68 @@ font-weight: 600;
 }
 .scorer-table th:nth-child(5) {
     width: 10%;
+}
+
+/* ----------- euro-matches  TABLE--------- */
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 5px;
+    }
+}
+.table-matches{
+margin-top: 15px;
+}
+.table-container h2 {
+    margin: 5px 10px 15px;
+    color: var(--main-color-yellow);
+}
+.euro-matches-table td {
+    color: var(--main-color-navy-blue);
+    padding: 5px;
+    font-size: 12px;
+}
+
+.euro-matches-table th {
+    color: var(--main-color-navy-blue);
+    padding: 3px;
+}
+.euro-matches-table td {
+    color: var(--main-color-navy-blue);
+    padding: 3px;
+}
+
+.tables-main .euro-matches-table {
+    width: 100%;
+text-align: center;
+    border: 1px solid #f9bf4b;
+    border-collapse: collapse;
+}
+
+.scorer-team-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.scorer-team-item {
+    font-size: 12px;
+}
+
+.euro-matches-table th:nth-child(1) {
+    width: 14%;
+}
+.euro-matches-table th:nth-child(2) {
+    width: 11%;
+}
+.euro-matches-table th:nth-child(3) {
+    width: 32%;
+}
+.euro-matches-table th:nth-child(4) {
+    width: 32%;
+}
+.euro-matches-table th:nth-child(5) {
+    width: 5%;
+}
+.euro-matches-table th:nth-child(6) {
+    width: 5%;
 }

@@ -20,7 +20,7 @@
     />
     <!-- ---- -->
     <link rel="stylesheet" href="./style.css" />
-    <title>Matches</title>
+    <title>Prediction</title>
   </head>
   <body>
     <header class="header">
@@ -32,28 +32,36 @@
       <section class="section">
         <div class="container">
           <div class="back">
-            <a href="./index.html">Go back</a>
+            <a href="./main-prd.html">Go back</a>
           </div>
-          <div class="container table-container">
-            <h2>Matches</h2>
-            <div class="tables-main table-matches">
-              <table class="euro-matches-table">
-                <thead>
-                  <tr>
-                    <th>Date</th>
-                    <th>Gr</th>
-                    <th>Team1</th>
-                    <th>Team2</th>
-                    <th colspan="2">Goals</th>
-                  </tr>
-                </thead>
-                <tbody class="js-tbody-matches"></tbody>
-              </table>
-            </div>
+        </div>
+        <div class="container table-container">
+          <h2>Results</h2>
+          <div class="form-select">
+            <form>
+              <label for="options">Choose group:</label>
+              <select id="options" name="options">
+                <option autofocus>fantasy</option>
+                <option>family</option>
+              </select>
+            </form>
+          </div>
+          <div class="tables-main table-matches">
+            <table class="euro-matches-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Group</th>
+                  <th>Name</th>
+                  <th>Score</th>
+                </tr>
+              </thead>
+              <tbody class="js-tbody-players"></tbody>
+            </table>
           </div>
         </div>
       </section>
+      <script type="module" src="./main-prd-res.js"></script>
     </main>
-    <script type="module" src="./main-matches.js"></script>
   </body>
 </html>
