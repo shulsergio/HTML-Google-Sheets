@@ -117,8 +117,8 @@ const allFixtures = [
     HomeTeam: "Türkiye",
     AwayTeam: "Georgia",
     Group: "Group F",
-    HomeTeamScore: null,
-    AwayTeamScore: null,
+    HomeTeamScore: 3,
+    AwayTeamScore: 1,
   },
   {
     MatchNumber: 12,
@@ -398,8 +398,17 @@ const allFixtures = [
 ];
 const newHtmlData = document.querySelector(".js-tbody-matches");
 const TeamFromTable = document.querySelector(".js-team-name");
+const LS_KEY_TEAM = "Team";
+const LS_KEY_GROUP = "Group";
+const teamChoice = JSON.parse(localStorage.getItem(LS_KEY_TEAM)) ?? "All";
+const groupChoice = JSON.parse(localStorage.getItem(LS_KEY_GROUP)) ?? "All";
 
-function onCreateHtmlData(ChoiceTeam = "all") {
+function onCreateHtmlData(ChoiceTeam, groupChoice) {
+  localStorage.removeItem(LS_KEY_TEAM);
+  localStorage.removeItem(LS_KEY_GROUP);
+  const header = document.querySelector(".table-container h2");
+  header.innerHTML = `${ChoiceTeam} matches`;
+  console.log(header);
   return allFixtures
     .map(
       ({
@@ -413,13 +422,14 @@ function onCreateHtmlData(ChoiceTeam = "all") {
         let newDate = DateUtc.slice(5, 10);
         HomeTeamScore = HomeTeamScore === null ? " " : HomeTeamScore;
         AwayTeamScore = AwayTeamScore === null ? " " : AwayTeamScore;
-        let xDone = HomeTeamScore === " " ? " " : "-";
-        if (
-          ChoiceTeam == "all" ||
-          ChoiceTeam === HomeTeam ||
-          ChoiceTeam === AwayTeam
-        ) {
-          return `<tr>
+        // let xDone = HomeTeamScore === " " ? " " : "-";
+        if (groupChoice == Group || groupChoice == "All") {
+          if (
+            ChoiceTeam == "All" ||
+            ChoiceTeam === HomeTeam ||
+            ChoiceTeam === AwayTeam
+          ) {
+            return `<tr>
                   <td>${DateUtc.slice(5, 10)}</td>
                   <td>${Group.slice(6, 7)}</td>
                   <td class="table-team-name js-team-name">${HomeTeam}</td>
@@ -427,6 +437,9 @@ function onCreateHtmlData(ChoiceTeam = "all") {
                   <td>${HomeTeamScore}</td>
                   <td>${AwayTeamScore}</td>
                 </tr>`;
+          } else {
+            return;
+          }
         } else {
           return;
         }
@@ -439,4 +452,7 @@ function onCreateHtmlData(ChoiceTeam = "all") {
 //   const
 // }
 
-newHtmlData.insertAdjacentHTML("beforeend", onCreateHtmlData("all"));
+newHtmlData.insertAdjacentHTML(
+  "beforeend",
+  onCreateHtmlData(teamChoice, groupChoice)
+);
