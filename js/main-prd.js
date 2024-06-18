@@ -6,15 +6,6 @@ const LS_KEY_GROUP = "Group";
 const textOk = document.querySelector(".special-item");
 form.addEventListener("click", onTeamChoise);
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => {
-      textOk.innerHTML = "Your data is uploaded!!!";
-    })
-    .catch((error) => console.error("Error!", error.message));
-});
-
 function onTeamChoise(evt) {
   let TeamText = "";
   if (evt.target.classList.contains("js-team-prediction")) {
@@ -26,5 +17,15 @@ function onTeamChoise(evt) {
     TeamText = evt.target.textContent;
     localStorage.setItem(LS_KEY_GROUP, JSON.stringify(TeamText));
     location.href = "./main-matches.html";
-  } else return;
+  } else {
+    return;
+  }
 }
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      textOk.innerHTML = "Your data is uploaded!!!";
+    })
+    .catch((error) => console.error("Error!", error.message));
+});

@@ -128,8 +128,8 @@ const allFixtures = [
     HomeTeam: "Portugal",
     AwayTeam: "Czechia",
     Group: "Group F",
-    HomeTeamScore: null,
-    AwayTeamScore: null,
+    HomeTeamScore: 2,
+    AwayTeamScore: 1,
   },
   {
     MatchNumber: 13,
