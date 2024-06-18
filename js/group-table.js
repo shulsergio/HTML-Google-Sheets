@@ -7,11 +7,11 @@ function onCheckClick(evt) {
   if (evt.target.classList.contains("js-team-add")) {
     TeamText = evt.target.textContent;
     localStorage.setItem(LS_KEY_TEAM, JSON.stringify(TeamText));
-    location.href = "../main-matches.html";
+    location.href = "./main-matches.html";
   }
   if (evt.target.classList.contains("js-group-add")) {
     TeamText = evt.target.textContent;
     localStorage.setItem(LS_KEY_GROUP, JSON.stringify(TeamText));
-    location.href = "../main-matches.html";
+    location.href = "./main-matches.html";
   } else return;
 }

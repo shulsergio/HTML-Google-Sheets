@@ -20,11 +20,11 @@ function onTeamChoise(evt) {
   if (evt.target.classList.contains("js-team-prediction")) {
     TeamText = evt.target.textContent;
     localStorage.setItem(LS_KEY_TEAM, JSON.stringify(TeamText));
-    location.href = "../main-matches.html";
+    location.href = "./main-matches.html";
   }
   if (evt.target.classList.contains("js-group-prediction")) {
     TeamText = evt.target.textContent;
     localStorage.setItem(LS_KEY_GROUP, JSON.stringify(TeamText));
-    location.href = "../main-matches.html";
+    location.href = "./main-matches.html";
   } else return;
 }
