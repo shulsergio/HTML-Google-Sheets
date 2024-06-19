@@ -1,5 +1,5 @@
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbzPLv5SFBxUHRXOkp3uNvRBwo156yBpG0VXIDfpihcLNXW4IARuF3uOdsEHxshxBzF45Q/exec";
+  "https://script.google.com/macros/s/AKfycbwIsMq9Fh7ljTtbkAe1c4wVLiT_J6CjzL999TOiLwAKkw0NJxXpxgL1b3p-yxPE_t_dXQ/exec";
 const form = document.forms["submit-to-google-sheet"];
 const LS_KEY_TEAM = "Team";
 const LS_KEY_GROUP = "Group";

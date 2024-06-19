@@ -103,6 +103,7 @@ function onCreatePlayersList(selectGroup = "fantasy") {
   let i = 0;
   console.log(allPlayers);
   return allPlayers
+    .toSorted((a, b) => b.score - a.score)
     .map(({ group, playerName, score }) => {
       if (group !== selectGroup) {
         return;
