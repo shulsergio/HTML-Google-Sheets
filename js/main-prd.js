@@ -22,7 +22,9 @@ function onTeamChoise(evt) {
   }
 }
 form.addEventListener("submit", (e) => {
+  textOk.innerHTML = "wait...";
   e.preventDefault();
+
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
       textOk.innerHTML = "Your data is uploaded!!!";
