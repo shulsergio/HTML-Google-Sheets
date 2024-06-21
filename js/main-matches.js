@@ -205,8 +205,8 @@ const allFixtures = [
     HomeTeam: "Slovakia",
     AwayTeam: "Ukraine",
     Group: "Group E",
-    HomeTeamScore: null,
-    AwayTeamScore: null,
+    HomeTeamScore: 1,
+    AwayTeamScore: 2,
   },
   {
     MatchNumber: 20,
@@ -216,8 +216,8 @@ const allFixtures = [
     HomeTeam: "Poland",
     AwayTeam: "Austria",
     Group: "Group D",
-    HomeTeamScore: null,
-    AwayTeamScore: null,
+    HomeTeamScore: 1,
+    AwayTeamScore: 3,
   },
   {
     MatchNumber: 21,
@@ -227,8 +227,8 @@ const allFixtures = [
     HomeTeam: "Netherlands",
     AwayTeam: "France",
     Group: "Group D",
-    HomeTeamScore: null,
-    AwayTeamScore: null,
+    HomeTeamScore: 0,
+    AwayTeamScore: 0,
   },
   {
     MatchNumber: 22,
