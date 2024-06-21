@@ -172,8 +172,8 @@ const allFixtures = [
     HomeTeam: "Slovenia",
     AwayTeam: "Serbia",
     Group: "Group C",
-    HomeTeamScore: null,
-    AwayTeamScore: null,
+    HomeTeamScore: 1,
+    AwayTeamScore: 0,
   },
   {
     MatchNumber: 17,
@@ -183,8 +183,8 @@ const allFixtures = [
     HomeTeam: "Denmark",
     AwayTeam: "England",
     Group: "Group C",
-    HomeTeamScore: null,
-    AwayTeamScore: null,
+    HomeTeamScore: 1,
+    AwayTeamScore: 1,
   },
   {
     MatchNumber: 18,
@@ -194,8 +194,8 @@ const allFixtures = [
     HomeTeam: "Spain",
     AwayTeam: "Italy",
     Group: "Group B",
-    HomeTeamScore: null,
-    AwayTeamScore: null,
+    HomeTeamScore: 1,
+    AwayTeamScore: 0,
   },
   {
     MatchNumber: 19,
