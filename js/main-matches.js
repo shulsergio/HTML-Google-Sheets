@@ -173,7 +173,7 @@ const allFixtures = [
     AwayTeam: "Serbia",
     Group: "Group C",
     HomeTeamScore: 1,
-    AwayTeamScore: 0,
+    AwayTeamScore: 1,
   },
   {
     MatchNumber: 17,
