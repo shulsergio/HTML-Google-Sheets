@@ -125,6 +125,13 @@ html {
 
 }
 
+#bubleChart {
+margin: 20px 5px;
+display: block;
+width: 140px !important;
+height: 140px !important;
+    }
+
 .all-list {
     display: flex;
     flex-direction: column;
@@ -574,3 +581,22 @@ text-align: center;
 .euro-matches-table th:nth-child(6) {
     width: 5%;
 }
+
+
+/* -------- chart ----------- */
+.chart-container{
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.chart-table{
+    background-color: #fff;
+    width: 120px;
+    font-size: 18px;
+    color: var(--main-color-navy-blue);
+    text-align: center;
+}
+/* ------------- */

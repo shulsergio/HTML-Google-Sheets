@@ -20,6 +20,7 @@
     />
     <!-- ---- -->
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Matches</title>
   </head>
   <body>
@@ -50,11 +51,18 @@
                 <tbody class="js-tbody-matches"></tbody>
               </table>
             </div>
+          </div>
+          <div class="container table-container chart-container">
+            <canvas id="bubleChart"></canvas>
+            <div class="chart-table js-chart-story"></div>
+          </div>
+          <div class="container table-container">
             <div class="js-table-topscores"></div>
           </div>
         </div>
       </section>
     </main>
+
     <script type="module" src="./js/main-matches.js"></script>
     <script type="module" src="./js/function.js"></script>
   </body>

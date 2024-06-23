@@ -626,8 +626,16 @@
     "HomeTeam": "Switzerland",
     "AwayTeam": "Germany",
     "Group": "Group A",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+          "goals1": [{
+            "name": "Ndoye",
+            "minute": 28
+          }],
+          "goals2": [{
+          "name": "Füllkrug",
+          "minute": 80
+          }]
   },
   {
     "MatchNumber": 26,
@@ -637,8 +645,13 @@
     "HomeTeam": "Scotland",
     "AwayTeam": "Hungary",
     "Group": "Group A",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 1,
+          "goals1": [],
+          "goals2": [{
+          "name": "Csoboth",
+          "minute": 80
+          }]
   },
   {
     "MatchNumber": 27,

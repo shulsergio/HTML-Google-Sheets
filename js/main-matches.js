@@ -6,6 +6,32 @@ const LS_KEY_TEAM = "Team";
 const LS_KEY_GROUP = "Group";
 const teamChoice = JSON.parse(localStorage.getItem(LS_KEY_TEAM)) ?? "All";
 const groupChoice = JSON.parse(localStorage.getItem(LS_KEY_GROUP)) ?? "All";
+let teamStats = { win: 0, draw: 0, lose: 0 };
+
+const dataChart = {
+  labels: ["Wins", "Draw", "Lose"],
+  datasets: [
+    {
+      data: [0, 0, 0], // Начальные значения
+      backgroundColor: ["#3498db", "#2ecc71", "#e74c3c"],
+      borderWidth: 2,
+    },
+  ],
+};
+
+// Конфигурация графика
+const config = {
+  type: "doughnut",
+  data: dataChart,
+  options: {
+    responsive: true, // Поддержка адаптивного дизайна
+    plugins: {
+      legend: {
+        display: false, // Отображение легенды
+      },
+    },
+  },
+};
 
 async function onCreateHtmlData(ChoiceTeam, groupChoice) {
   localStorage.removeItem(LS_KEY_TEAM);
@@ -16,7 +42,7 @@ async function onCreateHtmlData(ChoiceTeam, groupChoice) {
   console.log(header);
 
   let allFixtures1 = await onCreateDataFromJson();
-
+  teamStats = { win: 0, draw: 0, lose: 0 };
   return allFixtures1
     .map(
       ({
@@ -27,6 +53,24 @@ async function onCreateHtmlData(ChoiceTeam, groupChoice) {
         HomeTeamScore,
         AwayTeamScore,
       }) => {
+        if (
+          HomeTeamScore !== null &&
+          (HomeTeam === teamChoice || AwayTeam === teamChoice)
+        ) {
+          console.log("HomeTeamScore- ", HomeTeamScore);
+          if (HomeTeamScore === AwayTeamScore) {
+            console.log("draw ");
+            teamStats.draw++;
+          } else if (HomeTeamScore < AwayTeamScore) {
+            console.log("HT menshe ");
+            HomeTeam === teamChoice ? teamStats.lose++ : teamStats.win++;
+          } else {
+            console.log("HT bolshe ");
+            HomeTeam === teamChoice ? teamStats.win++ : teamStats.lose++;
+          }
+          console.log(teamStats);
+        }
+
         let newDate = DateUtc.slice(5, 10);
         HomeTeamScore = HomeTeamScore === null ? " " : HomeTeamScore;
         AwayTeamScore = AwayTeamScore === null ? " " : AwayTeamScore;
@@ -63,10 +107,9 @@ async function updateHtmlData() {
   console.log(teamChoice);
   if (teamChoice !== "All") {
     newTopScoresData(teamChoice);
+    onChartDataTeamCreate();
   }
 }
-
-updateHtmlData();
 
 async function newTopScoresData(teamChoice) {
   let allFixtures1 = await onCreateDataFromJson();
@@ -99,5 +142,27 @@ async function newTopScoresData(teamChoice) {
         </tr>`;
     })
     .join("");
+
   htmlShablonData.insertAdjacentHTML("beforeend", htmlData);
 }
+
+function onChartDataTeamCreate() {
+  // ----------chart.js
+  const ctx = document.getElementById("bubleChart");
+  const progressChart = new Chart(ctx, config);
+  progressChart.data.datasets[0].data = [
+    teamStats.win,
+    teamStats.draw,
+    teamStats.lose,
+  ];
+
+  const dataChartHtml = document.querySelector(".js-chart-story");
+  let allMatches = teamStats.win + teamStats.draw + teamStats.lose;
+  dataChartHtml.innerHTML = `
+<p>${allMatches} matches</p>
+<p>${teamStats.win} wins</p>
+<p>${teamStats.draw} draw</p>
+<p>${teamStats.lose} lose</p>`;
+}
+
+updateHtmlData();
