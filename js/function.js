@@ -1,7 +1,9 @@
 export async function onCreateDataFromJson() {
   let matchArray = [];
   try {
-    const response = await fetch("https://shulsergio.github.io/js/euro24.json");
+    const response = await fetch(
+      "https://shulsergio.github.io/HTML-Google-Sheets/js/euro24.json"
+    );
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
