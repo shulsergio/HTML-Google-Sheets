@@ -1,5 +1,5 @@
-import { onTopScoresList } from "./js/function.js";
-import { onCreateDataFromJson } from "./js/function.js";
+import { onTopScoresList } from "./function.js";
+import { onCreateDataFromJson } from "./function.js";
 const newHtmlData = document.querySelector(".js-tbody-topscores");
 
 async function updateHtmlData() {
