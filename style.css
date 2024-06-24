@@ -600,3 +600,17 @@ display: flex;
     text-align: center;
 }
 /* ------------- */
+/* ---------- */
+.all-choice-block{
+    margin-top: 10px;
+display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 50px;
+
+}
+.form-select label{
+    color: var(--main-color-yellow);
+    font-size: 18px;
+}
+/* ------------- */

@@ -661,8 +661,13 @@
     "HomeTeam": "Albania",
     "AwayTeam": "Spain",
     "Group": "Group B",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 1,
+          "goals1": [],
+          "goals2": [{
+          "name": "Ferran Torres",
+          "minute": 13
+          }]
   },
   {
     "MatchNumber": 28,
@@ -672,8 +677,16 @@
     "HomeTeam": "Croatia",
     "AwayTeam": "Italy",
     "Group": "Group B",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+          "goals1": [{
+          "name": "Modric",
+          "minute": 55
+          }],
+          "goals2": [{
+          "name": "Zaccagni",
+          "minute": 90
+          }]
   },
   {
     "MatchNumber": 29,
