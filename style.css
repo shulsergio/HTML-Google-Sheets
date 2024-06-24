@@ -167,6 +167,21 @@ background: linear-gradient(to bottom, #ffd700 50%, #0057b8 50% );
 }
 /* ------------- */
 
+.commond-line-css-prd{
+    margin-bottom: 10px;
+    padding: 10px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--main-color-blue);
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+}
+
+
+
+
 .clickable {
     width: 100%;
     height: 100%;
@@ -585,7 +600,14 @@ text-align: center;
 
 /* -------- chart ----------- */
 .chart-container{
-display: flex;
+margin: 20px 15px 20px 5px;
+width: 95%;
+    max-width: 700px;
+    border: 1px solid var(--main-color-navy-blue);
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -593,12 +615,18 @@ display: flex;
 }
 
 .chart-table{
+    padding: 5px;
     background-color: #fff;
+    border-radius: 8px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     width: 120px;
     font-size: 18px;
     color: var(--main-color-navy-blue);
     text-align: center;
 }
+
+
+
 /* ------------- */
 /* ---------- */
 .all-choice-block{

@@ -159,7 +159,8 @@ function onChartDataTeamCreate() {
   const dataChartHtml = document.querySelector(".js-chart-story");
   let allMatches = teamStats.win + teamStats.draw + teamStats.lose;
   dataChartHtml.innerHTML = `
-<p>${allMatches} matches</p>
+<p>${allMatches}  matches</p>
+<p> --------------</p>
 <p>${teamStats.win} wins</p>
 <p>${teamStats.draw} draw</p>
 <p>${teamStats.lose} lose</p>`;

@@ -775,5 +775,49 @@
     "Group": "Group F",
     "HomeTeamScore": null,
     "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 37,
+    "RoundNumber": 4,
+    "DateUtc": "2024-06-29 19:00:00Z",
+    "Location": "Olympiastadion",
+    "HomeTeam": "Switzerland",
+    "AwayTeam": "Italy",
+    "Group": "1/8",
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 38,
+    "RoundNumber": 4,
+    "DateUtc": "2024-06-29 22:00:00Z",
+    "Location": "BVB Stadion",
+    "HomeTeam": "Germany",
+    "AwayTeam": "2B",
+    "Group": "1/8",
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 39,
+    "RoundNumber": 4,
+    "DateUtc": "2024-06-30 19:00:00Z",
+    "Location": "Olympiastadion",
+    "HomeTeam": "1C",
+    "AwayTeam": "3D",
+    "Group": "1/8",
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 40,
+    "RoundNumber": 4,
+    "DateUtc": "2024-06-30 22:00:00Z",
+    "Location": "BVB Stadion",
+    "HomeTeam": "Spain",
+    "AwayTeam": "2A",
+    "Group": "1/8",
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
   }
 ]
