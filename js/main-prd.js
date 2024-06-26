@@ -6,7 +6,7 @@ const LS_KEY_GROUP = "Group";
 const textOk = document.querySelector(".special-item");
 form.addEventListener("click", onTeamChoise);
 
-if (new Date().getHours() >= 19) {
+if (new Date().getHours() >= 22) {
   const btnSubmit = document.querySelector(".submitbtn");
   btnSubmit.style.display = "none";
 }
