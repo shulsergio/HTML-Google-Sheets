@@ -696,8 +696,29 @@
     "HomeTeam": "Netherlands",
     "AwayTeam": "Austria",
     "Group": "Group D",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 3,
+          "goals1": [{
+                      "name": "Gakpo",
+          "minute": 47
+          },
+        {
+                      "name": "Depay",
+          "minute": 75
+          }],
+          "goals2": [{
+                      "name": "Malen",
+          "minute": 6,
+          "owngoal":true
+          },
+        {
+                      "name": "Schmid",
+          "minute": 59
+          },
+        {
+                      "name": "Sabitzer",
+          "minute": 80
+          }]
   },
   {
     "MatchNumber": 30,
@@ -707,8 +728,18 @@
     "HomeTeam": "France",
     "AwayTeam": "Poland",
     "Group": "Group D",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+          "goals1": [ {
+                      "name": "Mbappé",
+          "minute": 56,
+          "penalty":true
+          }],
+          "goals2": [ {
+                      "name": "Lewandowski",
+          "minute": 79,
+          "penalty":true
+          }]
   },
   {
     "MatchNumber": 31,
@@ -718,8 +749,10 @@
     "HomeTeam": "England",
     "AwayTeam": "Slovenia",
     "Group": "Group C",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+          "goals1": [],
+          "goals2": []
   },
   {
     "MatchNumber": 32,
@@ -729,8 +762,10 @@
     "HomeTeam": "Denmark",
     "AwayTeam": "Serbia",
     "Group": "Group C",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+          "goals1": [],
+          "goals2": []
   },
   {
     "MatchNumber": 33,
@@ -783,7 +818,7 @@
     "Location": "Olympiastadion",
     "HomeTeam": "Switzerland",
     "AwayTeam": "Italy",
-    "Group": "1/8",
+    "Group": "Stage 8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -793,8 +828,8 @@
     "DateUtc": "2024-06-29 22:00:00Z",
     "Location": "BVB Stadion",
     "HomeTeam": "Germany",
-    "AwayTeam": "2B",
-    "Group": "1/8",
+    "AwayTeam": "Denmark",
+    "Group": "Stage 8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -803,9 +838,9 @@
     "RoundNumber": 4,
     "DateUtc": "2024-06-30 19:00:00Z",
     "Location": "Olympiastadion",
-    "HomeTeam": "1C",
+    "HomeTeam": "England",
     "AwayTeam": "3D",
-    "Group": "1/8",
+    "Group": "Stage 8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -816,7 +851,53 @@
     "Location": "BVB Stadion",
     "HomeTeam": "Spain",
     "AwayTeam": "2A",
-    "Group": "1/8",
+    "Group": "Stage 8",
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 40,
+    "RoundNumber": 4,
+    "DateUtc": "2024-06-30 22:00:00Z",
+    "Location": "BVB Stadion",
+    "HomeTeam": "France",
+    "AwayTeam": "3A",
+    "Group": "Stage 8",
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+  {
+    "MatchNumber": 40,
+    "RoundNumber": 4,
+    "DateUtc": "2024-06-30 22:00:00Z",
+    "Location": "BVB Stadion",
+    "HomeTeam": "Portugal",
+    "AwayTeam": "3A",
+    "Group": "Stage 8",
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  }
+  ,
+  {
+    "MatchNumber": 40,
+    "RoundNumber": 4,
+    "DateUtc": "2024-06-30 22:00:00Z",
+    "Location": "BVB Stadion",
+    "HomeTeam": "3A",
+    "AwayTeam": "3A",
+    "Group": "Stage 8",
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  }
+  ,
+  {
+    "MatchNumber": 40,
+    "RoundNumber": 4,
+    "DateUtc": "2024-06-30 22:00:00Z",
+    "Location": "BVB Stadion",
+    "HomeTeam": "Austria",
+    "AwayTeam": "3A",
+    "Group": "Stage 8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   }

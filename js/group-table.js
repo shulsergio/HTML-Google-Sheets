@@ -15,3 +15,10 @@ function onCheckClick(evt) {
     location.href = "./main-matches.html";
   } else return;
 }
+const dropdown = document.querySelector("#options");
+dropdown.addEventListener("change", (evt) => {
+  console.log(`Selected value: ${evt.target.value}`);
+  if (evt.target.value == "Play-offs") {
+    location.href = "./oneeighthfinal.html";
+  }
+});
