@@ -48,15 +48,20 @@ async function onCreateHtmlData() {
       // AwayTeamScore: item.AwayTeamScore
 
       return `<div class="playoff-list">
-              <p class="team-playoff name-playoff">${item.HomeTeam}</p>
-              <p class="team-playoff goal-playoff">${
-                item.HomeTeamScore === null ? "" : item.HomeTeamScore
+              <p class="playoffs-text-style name-playoff">${item.HomeTeam}</p>
+              <p class="playoffs-text-style goal-playoff">
+              ${
+                item.HomeTeamScore === null
+                  ? item.DateUtc.slice(0, 10)
+                  : item.HomeTeamScore
               }</p>
             </div>
             <div class="playoff-list">
-              <p class="team-playoff name-playoff">${item.AwayTeam}</p>
-              <p class="team-playoff goal-playoff">${
-                item.AwayTeamScore === null ? "" : item.AwayTeamScore
+              <p class="playoffs-text-style name-playoff">${item.AwayTeam}</p>
+              <p class="playoffs-text-style goal-playoff">${
+                item.AwayTeamScore === null
+                  ? item.DateUtc.slice(0, 10)
+                  : item.AwayTeamScore
               }</p>
             </div>`;
     })

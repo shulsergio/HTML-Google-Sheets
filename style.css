@@ -645,11 +645,19 @@ display: flex;
 .playoff-list{
     margin: 10px;
     width: 250px;
-    padding: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     background-color: #fff;
     border: 1px solid #afafaf;
     border-radius: 8px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.playoffs-text-style{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--main-color-blue);
+}
+.name-playoff{
+    width: 120px;
 }
