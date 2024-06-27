@@ -41,20 +41,37 @@ async function onCreateHtmlData() {
   let i = 0;
   let allFixtures = allFixtures1
     .filter((item) => item.Group === "Stage 8")
-    .map((item) => ({
-      HomeTeam: item.HomeTeam,
-      AwayTeam: item.AwayTeam,
-      HomeTeamScore: item.HomeTeamScore,
-      AwayTeamScore: item.AwayTeamScore,
-    }));
+    .map((item) => {
+      // HomeTeam: item.HomeTeam,
+      // AwayTeam: item.AwayTeam,
+      // HomeTeamScore: item.HomeTeamScore === null ? "" : item.HomeTeamScore,
+      // AwayTeamScore: item.AwayTeamScore
+
+      return `<div class="playoff-list">
+              <p class="team-playoff name-playoff">${item.HomeTeam}</p>
+              <p class="team-playoff goal-playoff">${
+                item.HomeTeamScore === null ? "" : item.HomeTeamScore
+              }</p>
+            </div>
+            <div class="playoff-list">
+              <p class="team-playoff name-playoff">${item.AwayTeam}</p>
+              <p class="team-playoff goal-playoff">${
+                item.AwayTeamScore === null ? "" : item.AwayTeamScore
+              }</p>
+            </div>`;
+    })
+    .join("");
 
   console.log(allFixtures);
+  return allFixtures;
 }
 
 async function updateHtmlData() {
   onSelectStageData();
   const htmlData = await onCreateHtmlData();
   // i posle risuem
+  let newHtmlData = document.querySelector(".teams-playoff-list");
+  newHtmlData.insertAdjacentHTML("beforeend", htmlData);
 }
 
 updateHtmlData();
