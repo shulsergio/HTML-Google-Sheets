@@ -775,8 +775,13 @@
     "HomeTeam": "Slovakia",
     "AwayTeam": "Romania",
     "Group": "Group E",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+          "goals1": [{ "name": "Duda",
+          "minute": 24}],
+          "goals2": [{ "name": "R. Marin",
+          "minute": 37,
+          "penalty":true}]
   },
   {
     "MatchNumber": 34,
@@ -786,8 +791,10 @@
     "HomeTeam": "Ukraine",
     "AwayTeam": "Belgium",
     "Group": "Group E",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+          "goals1": [],
+          "goals2": []
   },
   {
     "MatchNumber": 35,
@@ -797,8 +804,14 @@
     "HomeTeam": "Georgia",
     "AwayTeam": "Portugal",
     "Group": "Group F",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+          "goals1": [{ "name": "Kvaratskhelia",
+          "minute": 2},
+        { "name": "Mikautadze",
+          "minute": 57,
+          "penalty":true}],
+          "goals2": []
   },
   {
     "MatchNumber": 36,
@@ -808,8 +821,18 @@
     "HomeTeam": "Czechia",
     "AwayTeam": "Türkiye",
     "Group": "Group F",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 2,
+          "goals1": [
+            { "name": "Souček",
+          "minute": 66}
+        ],
+          "goals2": [
+                      { "name": "Çalhanoğlu",
+          "minute": 51},
+                    { "name": "Cenk Tosun",
+          "minute": 90}
+          ]
   },
   {
     "MatchNumber": 37,
