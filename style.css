@@ -671,7 +671,7 @@ font-size: 14px;
 }
 .stage-playoffs-list{
     width: 95%;
-    margin: 10px auto;
+    margin: 15px auto;
     background-color:var(--main-color-blue);
     border: 1px solid var(--main-color-navy-blue);
     border-radius: 8px;
@@ -682,8 +682,12 @@ font-size: 14px;
     gap: 10px;
 }
 .stage-playoff-choose{
-    width: 60px;
+    width: 75px;
     padding: 10px 0;
     color: #fff;
     text-align: center;
+}
+.stage-playoff-choose.selected {
+    background-color: var(--main-color-navy-blue);
+   font-size: 16px;
 }

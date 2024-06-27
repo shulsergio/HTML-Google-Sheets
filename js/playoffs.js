@@ -38,7 +38,18 @@ function onSelectStageData() {
 
 async function onCreateHtmlData() {
   let allFixtures1 = await onCreateDataFromJson();
-  let i = 0;
+  let itemStage = document.querySelector(".js-stage-playoff");
+
+  let chooseStage = "1/8";
+  document.querySelector('.js-select[href="#1-8"]').classList.add("selected");
+  itemStage.addEventListener("click", (evt) => {
+    document.querySelectorAll(".js-select").forEach((item) => {
+      item.classList.remove("selected");
+    });
+    console.log(evt.target.textContent);
+    evt.target.classList.add("selected");
+  });
+  console.log(itemStage.text);
   let allFixtures = allFixtures1
     .filter((item) => item.Group === "Stage 8")
     .map((item) => {
@@ -65,8 +76,6 @@ async function onCreateHtmlData() {
             </div>`;
     })
     .join("");
-
-  console.log(allFixtures);
   return allFixtures;
 }
 
