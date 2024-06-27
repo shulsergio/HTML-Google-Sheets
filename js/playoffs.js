@@ -59,9 +59,7 @@ async function onCreateHtmlData() {
             <div class="playoff-list">
               <p class="playoffs-text-style name-playoff">${item.AwayTeam}</p>
               <p class="playoffs-text-style goal-playoff">${
-                item.AwayTeamScore === null
-                  ? item.DateUtc.slice(0, 10)
-                  : item.AwayTeamScore
+                item.AwayTeamScore === null ? "" : item.AwayTeamScore
               }</p>
             </div>`;
     })
