@@ -642,3 +642,14 @@ display: flex;
     font-size: 18px;
 }
 /* ------------- */
+.playoff-list{
+    margin: 10px;
+    width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border: 1px solid #afafaf;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}

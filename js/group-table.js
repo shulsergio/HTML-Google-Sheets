@@ -16,9 +16,15 @@ function onCheckClick(evt) {
   } else return;
 }
 const dropdown = document.querySelector("#options");
+dropdown.selectedIndex = 0;
 dropdown.addEventListener("change", (evt) => {
   console.log(`Selected value: ${evt.target.value}`);
   if (evt.target.value == "Play-offs") {
-    location.href = "./oneeighthfinal.html";
+    dropdown.selectedIndex = 1;
+    location.href = "./playoffs.html";
+  }
+  if (evt.target.value == "Main stage") {
+    dropdown.selectedIndex = 0;
+    location.href = "./group-table.html";
   }
 });
