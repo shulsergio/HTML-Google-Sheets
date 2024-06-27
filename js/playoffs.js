@@ -1,27 +1,25 @@
 import { onTopScoresList } from "./function.js";
 import { onCreateDataFromJson } from "./function.js";
+let itemStage = document.querySelector(".js-stage-playoff");
+const dropdown = document.querySelector("#options");
 
-const playoffsTeam = [
-  "Spain",
-  "Georgia",
-  "Germany",
-  "Denmark",
-  "Portugal",
-  "Slovenia",
-  "France",
-  "Belgium",
-  "Romania",
-  "Slovenia",
-  "Netherlands",
-  "Austria",
-  "Türkiye",
-  "England",
-  "Italy",
-  "Switzerland",
-];
+onSelectStageData();
+updateHtmlData("1/8");
+itemStage.addEventListener("click", (evt) => {
+  document.querySelectorAll(".js-select").forEach((item) => {
+    item.classList.remove("selected");
+  });
+  let chooseStage = evt.target.textContent;
+  evt.target.classList.add("selected");
+  updateHtmlData(chooseStage);
+});
 
+// ----------functions--------
+/**
+ * onSelectStageData() - func for transit
+ *  between Play-offs <-> Main stage
+ */
 function onSelectStageData() {
-  const dropdown = document.querySelector("#options");
   dropdown.selectedIndex = 1;
   dropdown.addEventListener("change", (evt) => {
     console.log(`Selected value: ${evt.target.value}`);
@@ -36,21 +34,10 @@ function onSelectStageData() {
   });
 }
 
-async function onCreateHtmlData() {
+async function onCreateHtmlData(chooseStage) {
   let allFixtures1 = await onCreateDataFromJson();
-  let itemStage = document.querySelector(".js-stage-playoff");
 
-  let chooseStage = "1/8";
-  document.querySelector('.js-select[href="#1-8"]').classList.add("selected");
-  itemStage.addEventListener("click", (evt) => {
-    document.querySelectorAll(".js-select").forEach((item) => {
-      item.classList.remove("selected");
-    });
-    chooseStage = evt.target.textContent;
-    console.log(evt.target.textContent);
-    evt.target.classList.add("selected");
-  });
-  console.log(itemStage.text);
+  console.log("chooseStage in start- ", chooseStage);
   let allFixtures = allFixtures1
     .filter((item) => item.Group === chooseStage)
     .map((item) => {
@@ -80,12 +67,11 @@ async function onCreateHtmlData() {
   return allFixtures;
 }
 
-async function updateHtmlData() {
-  onSelectStageData();
-  const htmlData = await onCreateHtmlData();
-  // i posle risuem
+async function updateHtmlData(chooseStage) {
+  let htmlData = await onCreateHtmlData(chooseStage);
   let newHtmlData = document.querySelector(".teams-playoff-list");
+  newHtmlData.innerHTML = "";
   newHtmlData.insertAdjacentHTML("beforeend", htmlData);
-}
 
-updateHtmlData();
+  console.log("chooseStage last- ", chooseStage);
+}
