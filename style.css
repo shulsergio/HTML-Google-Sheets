@@ -680,10 +680,9 @@ font-size: 14px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 10px;
 }
 .stage-playoff-choose{
-    width: 75px;
+    width: 25%;
     padding: 10px 0;
     color: #fff;
     text-align: center;
