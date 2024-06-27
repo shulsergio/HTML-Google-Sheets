@@ -42,11 +42,6 @@ async function onCreateHtmlData() {
   let allFixtures = allFixtures1
     .filter((item) => item.Group === "Stage 8")
     .map((item) => {
-      // HomeTeam: item.HomeTeam,
-      // AwayTeam: item.AwayTeam,
-      // HomeTeamScore: item.HomeTeamScore === null ? "" : item.HomeTeamScore,
-      // AwayTeamScore: item.AwayTeamScore
-
       return `<div class="playoff-list">
       <p class="playoffs-text-style data-playoff">${item.HomeTeamStatus}</p>
               <p class="playoffs-text-style name-playoff">${item.HomeTeam}</p>
