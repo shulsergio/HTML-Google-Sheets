@@ -485,11 +485,6 @@ font-weight: 600;
     padding: 5px;
 }
 
-.table-container h2 {
-    margin: 15px 10px;
-    color: var(--main-color-yellow);
-}
-
 .tables-main {
     margin: 5px;
     padding: 10px;
@@ -542,10 +537,6 @@ font-weight: 600;
 }
 .table-matches{
 margin-top: 15px;
-}
-.table-container h2 {
-    margin: 5px 10px 15px;
-    color: var(--main-color-yellow);
 }
 .euro-matches-table td {
     color: var(--main-color-navy-blue);
@@ -625,8 +616,6 @@ width: 95%;
     text-align: center;
 }
 
-
-
 /* ------------- */
 /* ---------- */
 .all-choice-block{
@@ -634,13 +623,25 @@ width: 95%;
 display: flex;
     flex-direction: row;
     align-items: baseline;
-    gap: 50px;
+    justify-content: space-evenly
 
 }
 .form-select label{
     color: var(--main-color-yellow);
-    font-size: 18px;
+    font-size: 16px;
+    margin-right: 3px;
 }
+.form-select select {
+    border-radius: 4px;
+    border: 1px solid #afafaf;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.form-select select:focus {
+    border-color: #3498db;
+}
+
 /* ------------- */
 .playoff-list{
     margin: 8px auto;
@@ -686,9 +687,15 @@ font-size: 14px;
     padding: 10px 0;
     color: #fff;
     text-align: center;
-    transition: background-color 1s ease, font-size 1s ease,;
+    transition: background-color 0.5s ease, font-size 0.5s ease;
+}
+.stage-playoff-choose:hover,
+.stage-playoff-choose:focus {
+    background-color: #2D4AC2;
+    color: #fff;
 }
 .stage-playoff-choose.selected {
     background-color: var(--main-color-navy-blue);
-   font-size: 16px;
+    font-size: 16px;
+
 }
