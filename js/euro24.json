@@ -843,7 +843,7 @@
     "AwayTeamStatus":"B2",
     "HomeTeam": "Switzerland",
     "AwayTeam": "Italy",
-    "Group": "Stage 8",
+    "Group": "1/8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -856,7 +856,7 @@
     "AwayTeamStatus":"C2",
     "HomeTeam": "Germany",
     "AwayTeam": "Denmark",
-    "Group": "Stage 8",
+    "Group": "1/8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -869,7 +869,7 @@
     "AwayTeamStatus":"E3",
     "HomeTeam": "England",
     "AwayTeam": "Slovakia",
-    "Group": "Stage 8",
+    "Group": "1/8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -882,7 +882,7 @@
     "AwayTeamStatus":"F3",
     "HomeTeam": "Spain",
     "AwayTeam": "Georgia",
-    "Group": "Stage 8",
+    "Group": "1/8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -895,7 +895,7 @@
     "AwayTeamStatus":"E2",
     "HomeTeam": "France",
     "AwayTeam": "Belgium",
-    "Group": "Stage 8",
+    "Group": "1/8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -908,7 +908,7 @@
     "AwayTeamStatus":"C3",
     "HomeTeam": "Portugal",
     "AwayTeam": "Slovenia",
-    "Group": "Stage 8",
+    "Group": "1/8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -921,7 +921,7 @@
     "AwayTeamStatus":"D3",
     "HomeTeam": "Romania",
     "AwayTeam": "Netherlands",
-    "Group": "Group 8",
+    "Group": "1/8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -934,7 +934,7 @@
     "AwayTeamStatus":"F2",
     "HomeTeam": "Austria",
     "AwayTeam": "Türkiye",
-    "Group": "Stage 8",
+    "Group": "1/8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -947,7 +947,7 @@
     "AwayTeamStatus":"F2",
     "HomeTeam": "A1",
     "AwayTeam": "A2",
-    "Group": "Stage 4",
+    "Group": "1/4",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -960,7 +960,7 @@
     "AwayTeamStatus":"F2",
     "HomeTeam": "A3",
     "AwayTeam": "A4",
-    "Group": "Stage 4",
+    "Group": "1/4",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -973,7 +973,7 @@
     "AwayTeamStatus":"F2",
     "HomeTeam": "A5",
     "AwayTeam": "A6",
-    "Group": "Stage 4",
+    "Group": "1/4",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -986,7 +986,7 @@
     "AwayTeamStatus":"F2",
     "HomeTeam": "A7",
     "AwayTeam": "A8",
-    "Group": "Stage 4",
+    "Group": "1/4",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   }
@@ -1000,7 +1000,7 @@
     "AwayTeamStatus":"F2",
     "HomeTeam": "B1",
     "AwayTeam": "B2",
-    "Group": "Stage 2",
+    "Group": "1/2",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
@@ -1013,7 +1013,7 @@
     "AwayTeamStatus":"F2",
     "HomeTeam": "B3",
     "AwayTeam": "B4",
-    "Group": "Stage 2",
+    "Group": "1/2",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   }

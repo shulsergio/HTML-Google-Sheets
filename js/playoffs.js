@@ -46,12 +46,13 @@ async function onCreateHtmlData() {
     document.querySelectorAll(".js-select").forEach((item) => {
       item.classList.remove("selected");
     });
+    chooseStage = evt.target.textContent;
     console.log(evt.target.textContent);
     evt.target.classList.add("selected");
   });
   console.log(itemStage.text);
   let allFixtures = allFixtures1
-    .filter((item) => item.Group === "Stage 8")
+    .filter((item) => item.Group === chooseStage)
     .map((item) => {
       return `<div class="playoff-list">
       <p class="playoffs-text-style data-playoff">${item.HomeTeamStatus}</p>
