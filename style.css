@@ -653,13 +653,18 @@ display: flex;
     border-radius: 8px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
-.playoff-list:nth-child(2n){
+/* .playoff-list:nth-child(2n){
 margin-bottom: 20px;
-}
+} */
 .playoffs-text-style{
 font-size: 14px;
     font-weight: 600;
     color: var(--main-color-navy-blue);
+}
+.data-playoff{
+    width: 25px;
+    font-weight: normal;
+    color: var(--main-color-yellow);
 }
 .name-playoff{
     width: 120px;
