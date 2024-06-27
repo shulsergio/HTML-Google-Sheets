@@ -845,7 +845,7 @@
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
-  {
+   {
     "MatchNumber": 38,
     "RoundNumber": 4,
     "DateUtc": "2024-06-29 22:00:00Z",
@@ -862,65 +862,63 @@
     "DateUtc": "2024-06-30 19:00:00Z",
     "Location": "Olympiastadion",
     "HomeTeam": "England",
-    "AwayTeam": "3D",
+    "AwayTeam": "Slovakia",
     "Group": "Stage 8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
-  {
+   {
     "MatchNumber": 40,
     "RoundNumber": 4,
     "DateUtc": "2024-06-30 22:00:00Z",
     "Location": "BVB Stadion",
     "HomeTeam": "Spain",
-    "AwayTeam": "2A",
+    "AwayTeam": "Georgia",
     "Group": "Stage 8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
-  {
-    "MatchNumber": 40,
+   {
+    "MatchNumber": 41,
     "RoundNumber": 4,
-    "DateUtc": "2024-06-30 22:00:00Z",
+    "DateUtc": "2024-07-01 22:00:00Z",
     "Location": "BVB Stadion",
     "HomeTeam": "France",
-    "AwayTeam": "3A",
+    "AwayTeam": "Belgium",
+    "Group": "Stage 8",
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+   {
+    "MatchNumber": 42,
+    "RoundNumber": 4,
+    "DateUtc": "2024-07-01 22:00:00Z",
+    "Location": "BVB Stadion",
+    "HomeTeam": "Portugal",
+    "AwayTeam": "Slovenia",
     "Group": "Stage 8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   },
   {
-    "MatchNumber": 40,
+    "MatchNumber": 43,
     "RoundNumber": 4,
-    "DateUtc": "2024-06-30 22:00:00Z",
+    "DateUtc": "2024-07-02 19:00:00Z",
     "Location": "BVB Stadion",
-    "HomeTeam": "Portugal",
-    "AwayTeam": "3A",
-    "Group": "Stage 8",
+    "HomeTeam": "Romania",
+    "AwayTeam": "Netherlands",
+    "Group": "Group 8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
-  }
-  ,
-  {
-    "MatchNumber": 40,
+  },
+   {
+    "MatchNumber": 44,
     "RoundNumber": 4,
-    "DateUtc": "2024-06-30 22:00:00Z",
-    "Location": "BVB Stadion",
-    "HomeTeam": "3A",
-    "AwayTeam": "3A",
-    "Group": "Stage 8",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  }
-  ,
-  {
-    "MatchNumber": 40,
-    "RoundNumber": 4,
-    "DateUtc": "2024-06-30 22:00:00Z",
+    "DateUtc": "2024-07-02 22:00:00Z",
     "Location": "BVB Stadion",
     "HomeTeam": "Austria",
-    "AwayTeam": "3A",
-    "Group": "Group/8",
+    "AwayTeam": "Türkiye",
+    "Group": "Stage 8",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   }

@@ -1,6 +1,25 @@
 import { onTopScoresList } from "./function.js";
 import { onCreateDataFromJson } from "./function.js";
 
+const playoffsTeam = [
+  "Spain",
+  "Georgia",
+  "Germany",
+  "Denmark",
+  "Portugal",
+  "Slovenia",
+  "France",
+  "Belgium",
+  "Romania",
+  "Slovenia",
+  "Netherlands",
+  "Austria",
+  "Türkiye",
+  "England",
+  "Italy",
+  "Switzerland",
+];
+
 function onSelectStageData() {
   const dropdown = document.querySelector("#options");
   dropdown.selectedIndex = 1;
@@ -19,6 +38,7 @@ function onSelectStageData() {
 
 async function onCreateHtmlData() {
   let allFixtures1 = await onCreateDataFromJson();
+  let i = 0;
   let allFixtures = allFixtures1
     .filter((item) => item.Group === "Stage 8")
     .map((item) => ({
@@ -27,6 +47,7 @@ async function onCreateHtmlData() {
       HomeTeamScore: item.HomeTeamScore,
       AwayTeamScore: item.AwayTeamScore,
     }));
+
   console.log(allFixtures);
 }
 
