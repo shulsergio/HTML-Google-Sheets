@@ -844,8 +844,14 @@
     "HomeTeam": "Switzerland",
     "AwayTeam": "Italy",
     "Group": "1/8",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+          "goals1": [{ "name": "Freuler",
+          "minute": 37},
+        { "name": "Vargas",
+          "minute": 46
+          }],
+          "goals2": []
   },
    {
     "MatchNumber": 38,
@@ -857,8 +863,15 @@
     "HomeTeam": "Germany",
     "AwayTeam": "Denmark",
     "Group": "1/8",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 0,
+          "goals1": [{ "name": "Havertz",
+          "minute": 53,
+              "penalty":true},
+        { "name": "Musiala",
+          "minute": 68
+          }],
+          "goals2": []
   },
   {
     "MatchNumber": 39,
@@ -941,12 +954,12 @@
    {
     "MatchNumber": 45,
     "RoundNumber": 5,
-    "DateUtc": "2024-07-05 22:00:00Z",
+    "DateUtc": "2024-07-05 19:00:00Z",
     "Location": "BVB Stadion",
     "HomeTeamStatus":"D1",
-    "AwayTeamStatus":"F2",
+    "AwayTeamStatus":"A2",
     "HomeTeam": "A1",
-    "AwayTeam": "A2",
+    "AwayTeam": "Germany",
     "Group": "1/4",
     "HomeTeamScore": null,
     "AwayTeamScore": null
@@ -957,9 +970,9 @@
     "DateUtc": "2024-07-05 22:00:00Z",
     "Location": "BVB Stadion",
     "HomeTeamStatus":"D1",
-    "AwayTeamStatus":"F2",
+    "AwayTeamStatus":"A1",
     "HomeTeam": "A3",
-    "AwayTeam": "A4",
+    "AwayTeam": "Switzerland",
     "Group": "1/4",
     "HomeTeamScore": null,
     "AwayTeamScore": null
@@ -967,7 +980,7 @@
    {
     "MatchNumber": 47,
     "RoundNumber": 5,
-    "DateUtc": "2024-07-06 22:00:00Z",
+    "DateUtc": "2024-07-06 19:00:00Z",
     "Location": "BVB Stadion",
     "HomeTeamStatus":"D1",
     "AwayTeamStatus":"F2",
