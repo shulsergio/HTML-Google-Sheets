@@ -224,6 +224,10 @@ font-weight: bold;
 
 /* ----------- */
 
+.pointer{
+  cursor: pointer;
+}
+
 .back {
     margin-right: 10px;
     width: 100px;

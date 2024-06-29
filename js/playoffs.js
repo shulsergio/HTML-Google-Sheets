@@ -57,7 +57,7 @@ async function onCreateHtmlData(chooseStage) {
     .map((item) => {
       return `<div class="playoff-list">
       <p class="playoffs-text-style data-playoff">${item.HomeTeamStatus}</p>
-              <p class="playoffs-text-style name-playoff js-team-add">${
+              <p class="playoffs-text-style pointer name-playoff js-team-add">${
                 item.HomeTeam
               }</p>
               <p class="playoffs-text-style data-playoff">|</p>
@@ -71,7 +71,7 @@ async function onCreateHtmlData(chooseStage) {
             <div class="playoff-list">
             <p class="playoffs-text-style data-playoff">${item.AwayTeamStatus}
               </p>
-              <p class="playoffs-text-style name-playoff js-team-add">${
+              <p class="playoffs-text-style pointer name-playoff js-team-add">${
                 item.AwayTeam
               }</p>
               <p class="playoffs-text-style data-playoff">|</p>
