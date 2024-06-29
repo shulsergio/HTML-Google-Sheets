@@ -3,10 +3,11 @@ const scriptURL =
 const form = document.forms["submit-to-google-sheet"];
 const LS_KEY_TEAM = "Team";
 const LS_KEY_GROUP = "Group";
+const TIME_FOR_CLOSED = 19;
 const textOk = document.querySelector(".special-item");
 form.addEventListener("click", onTeamChoise);
 
-if (new Date().getHours() >= 22) {
+if (new Date().getHours() >= TIME_FOR_CLOSED) {
   const btnSubmit = document.querySelector(".submitbtn");
   btnSubmit.style.display = "none";
 }
