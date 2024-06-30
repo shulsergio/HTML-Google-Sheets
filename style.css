@@ -305,6 +305,16 @@ font-weight: bold;
     margin-left: 5px;
     text-align: center;
 }
+.text-all-timer{
+    width: 280px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.block-span-timer{
+        font-size: 16px;
+        font-weight: normal;
+}
 
 @media only screen and (max-width: 374px) {
 .text-all {
@@ -315,6 +325,9 @@ font-weight: bold;
         margin-left: 3px;
         text-align: center;
     }
+        .text-all-timer {
+            width: 234px;
+        }
 }
 
 
