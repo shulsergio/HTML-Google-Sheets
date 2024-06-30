@@ -88,7 +88,7 @@
               "minute": 29
             },
             {
-              "name": "Fabián",
+              "name": "Fabián Ruiz",
               "minute": 32
             },
             {
@@ -883,8 +883,14 @@
     "HomeTeam": "England",
     "AwayTeam": "Slovakia",
     "Group": "1/8",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 1,
+          "goals1": [{ "name": "Bellingham",
+          "minute": 90},
+{ "name": "Kane",
+          "minute": 91}],
+          "goals2": [{ "name": "Schranz",
+          "minute": 25}]
   },
    {
     "MatchNumber": 40,
@@ -896,8 +902,19 @@
     "HomeTeam": "Spain",
     "AwayTeam": "Georgia",
     "Group": "1/8",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 4,
+    "AwayTeamScore": 1,
+          "goals1": [{ "name": "Rodri",
+          "minute": 39},
+{ "name": "Fabián Ruiz",
+          "minute": 51},
+        { "name": "Williams",
+          "minute": 75},
+        { "name": "Olmo",
+          "minute": 83}],
+          "goals2": [{ "name": "Normand",
+          "minute": 53,
+          "owngoal":true}]
   },
    {
     "MatchNumber": 41,
@@ -958,7 +975,7 @@
     "Location": "BVB Stadion",
     "HomeTeamStatus":"D1",
     "AwayTeamStatus":"A2",
-    "HomeTeam": "A1",
+    "HomeTeam": "Spain",
     "AwayTeam": "Germany",
     "Group": "1/4",
     "HomeTeamScore": null,
@@ -971,7 +988,7 @@
     "Location": "BVB Stadion",
     "HomeTeamStatus":"D1",
     "AwayTeamStatus":"A1",
-    "HomeTeam": "A3",
+    "HomeTeam": "England",
     "AwayTeam": "Switzerland",
     "Group": "1/4",
     "HomeTeamScore": null,
