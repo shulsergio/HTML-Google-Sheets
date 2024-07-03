@@ -926,8 +926,14 @@
     "HomeTeam": "France",
     "AwayTeam": "Belgium",
     "Group": "1/8",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 0,
+          "goals1": [{ "name": "Vertonghen",
+          "minute": 53,
+          "owngoal":true
+   }
+            ],
+          "goals2": []
   },
    {
     "MatchNumber": 42,
@@ -939,8 +945,10 @@
     "HomeTeam": "Portugal",
     "AwayTeam": "Slovenia",
     "Group": "1/8",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+          "goals1": [],
+          "goals2": []
   },
   {
     "MatchNumber": 43,
@@ -952,8 +960,21 @@
     "HomeTeam": "Romania",
     "AwayTeam": "Netherlands",
     "Group": "1/8",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 3,
+          "goals1": [],
+          "goals2": [{
+            "name":"Gakpo",
+            "minute":20
+            },
+            {
+            "name":"Malen",
+            "minute":83
+          },
+          {
+            "name":"Malen",
+            "minute":90
+          }]
   },
    {
     "MatchNumber": 44,
@@ -965,8 +986,20 @@
     "HomeTeam": "Austria",
     "AwayTeam": "Türkiye",
     "Group": "1/8",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 2,
+          "goals1": [{
+            "name":"Gregoritsch",
+            "minute":66
+            }],
+          "goals2": [{
+            "name":"Demiral",
+            "minute":1
+            },
+            {
+            "name":"Demiral",
+            "minute":59
+          }]
   },
    {
     "MatchNumber": 45,
@@ -988,8 +1021,8 @@
     "Location": "BVB Stadion",
     "HomeTeamStatus":"D1",
     "AwayTeamStatus":"A1",
-    "HomeTeam": "England",
-    "AwayTeam": "Switzerland",
+    "HomeTeam": "Portugal",
+    "AwayTeam": "France",
     "Group": "1/4",
     "HomeTeamScore": null,
     "AwayTeamScore": null
@@ -1001,8 +1034,8 @@
     "Location": "BVB Stadion",
     "HomeTeamStatus":"D1",
     "AwayTeamStatus":"F2",
-    "HomeTeam": "A5",
-    "AwayTeam": "A6",
+    "HomeTeam": "England",
+    "AwayTeam": "Switzerland",
     "Group": "1/4",
     "HomeTeamScore": null,
     "AwayTeamScore": null
@@ -1014,8 +1047,8 @@
     "Location": "BVB Stadion",
     "HomeTeamStatus":"D1",
     "AwayTeamStatus":"F2",
-    "HomeTeam": "A7",
-    "AwayTeam": "A8",
+    "HomeTeam": "Netherlands",
+    "AwayTeam": "Türkiye",
     "Group": "1/4",
     "HomeTeamScore": null,
     "AwayTeamScore": null
