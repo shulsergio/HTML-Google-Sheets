@@ -3,9 +3,10 @@ const scriptURL =
 const form = document.forms["submit-to-google-sheet"];
 const LS_KEY_TEAM = "Team";
 const LS_KEY_GROUP = "Group";
+const textLoadig = document.querySelector(".loader");
 const textOk = document.querySelector(".special-item");
 const textTimer = document.querySelector(".js-timer");
-const TIME_FOR_CLOSED = 19; // CLOSED Prediction
+const TIME_FOR_CLOSED = 22; // CLOSED Prediction
 const finalData = new Date(2024, 6, 14, 22, 0, 0); // FINAL DATE
 
 form.addEventListener("click", onTeamChoise);
@@ -49,11 +50,14 @@ function onTimer() {
 }
 
 form.addEventListener("submit", (e) => {
-  textOk.innerHTML = "wait...";
+  // textOk.innerHTML = "wait...";
+  textLoadig.style.display = "inline-block";
+
   e.preventDefault();
 
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
+      textLoadig.style.display = "none";
       textOk.innerHTML = "Your data is uploaded!!!";
     })
     .catch((error) => console.error("Error!", error.message));
