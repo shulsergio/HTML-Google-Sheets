@@ -1011,8 +1011,8 @@
     "HomeTeam": "Spain",
     "AwayTeam": "Germany",
     "Group": "1/4",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1
   },
    {
     "MatchNumber": 46,
@@ -1024,8 +1024,8 @@
     "HomeTeam": "Portugal",
     "AwayTeam": "France",
     "Group": "1/4",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0
   },
    {
     "MatchNumber": 47,
