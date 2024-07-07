@@ -410,12 +410,13 @@ width: 300px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6)
 }
 
-.matches-list{
+.matches-list {
     display: flex;
     flex-direction: column;
-        margin-top: 20px;
-align-items: center;
+    margin-top: 20px;
+    align-items: center;
 }
+
 .matches-item {
     width: 300px;
     padding: 5px 5px;
@@ -430,9 +431,9 @@ align-items: center;
     padding: 5px 10px;
     height: 40px;
     font-size: 24px;
-        color: var(--main-color-yellow);
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 400;
+    color: var(--main-color-yellow);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 /* ------about */
