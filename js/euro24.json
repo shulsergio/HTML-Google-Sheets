@@ -1011,8 +1011,19 @@
     "HomeTeam": "Spain",
     "AwayTeam": "Germany",
     "Group": "1/4",
-    "HomeTeamScore": 1,
-    "AwayTeamScore": 1
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 1,
+          "goals1": [{
+            "name":"Olmo",
+            "minute":51
+            },{
+            "name":"Merino",
+            "minute":119
+            }],
+          "goals2": [{
+            "name":"Wirtz",
+            "minute":89
+            }]
   },
    {
     "MatchNumber": 46,
@@ -1037,8 +1048,16 @@
     "HomeTeam": "England",
     "AwayTeam": "Switzerland",
     "Group": "1/4",
-    "HomeTeamScore": 2,
-    "AwayTeamScore": 1
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+          "goals1": [{
+            "name":"Saka",
+            "minute":80
+            }],
+          "goals2": [{
+            "name":"Embolo",
+            "minute":75
+            }]
   },
    {
     "MatchNumber": 48,
@@ -1051,7 +1070,19 @@
     "AwayTeam": "Türkiye",
     "Group": "1/4",
     "HomeTeamScore": 2,
-    "AwayTeamScore": 1
+    "AwayTeamScore": 1,
+          "goals1": [{
+            "name":"De Vrij",
+            "minute":70
+            },{
+            "name":"Müldür",
+            "minute":76,
+            "owngoal":true
+            }],
+          "goals2": [{
+            "name":"Akaydin",
+            "minute":35
+            }]
   }
   ,
    {
