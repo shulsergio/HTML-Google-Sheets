@@ -427,8 +427,7 @@
           "goals2": [
             {
               "name": "Jović",
-              "minute": 90,
-              "offset": 5
+              "minute": 90
             }
           ]
   },
@@ -1011,8 +1010,8 @@
     "HomeTeam": "Spain",
     "AwayTeam": "Germany",
     "Group": "1/4",
-    "HomeTeamScore": 1,
-    "AwayTeamScore": 1
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
   },
    {
     "MatchNumber": 46,
@@ -1024,8 +1023,8 @@
     "HomeTeam": "Portugal",
     "AwayTeam": "France",
     "Group": "1/4",
-    "HomeTeamScore": 0,
-    "AwayTeamScore": 0
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
   },
    {
     "MatchNumber": 47,

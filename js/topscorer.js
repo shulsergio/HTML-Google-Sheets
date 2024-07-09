@@ -4,8 +4,9 @@ const newHtmlData = document.querySelector(".js-tbody-topscores");
 
 async function updateHtmlData() {
   let allFixtures1 = await onCreateDataFromJson();
+  console.log("allFixtures1", allFixtures1);
   let newData = onTopScoresList(allFixtures1, "all");
-
+  console.log("newData", newData);
   let i = 0;
   let htmlData = newData
     .map(({ name, team, goals }) => {
