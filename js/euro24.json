@@ -1010,8 +1010,19 @@
     "HomeTeam": "Spain",
     "AwayTeam": "Germany",
     "Group": "1/4",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 1,
+          "goals1": [{
+            "name":"Olmo",
+            "minute":51
+            },{
+            "name":"Merino",
+            "minute":119
+            }],
+          "goals2": [{
+            "name":"Wirtz",
+            "minute":89
+            }]
   },
    {
     "MatchNumber": 46,
@@ -1023,8 +1034,10 @@
     "HomeTeam": "Portugal",
     "AwayTeam": "France",
     "Group": "1/4",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 0,
+    "AwayTeamScore": 0,
+          "goals1": [],
+          "goals2": []
   },
    {
     "MatchNumber": 47,
@@ -1036,8 +1049,14 @@
     "HomeTeam": "England",
     "AwayTeam": "Switzerland",
     "Group": "1/4",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 1,
+          "goals1": [{
+            "name":"Saka",
+            "minute":80}],
+          "goals2": [{
+            "name":"Embolo",
+            "minute":75}]
   },
    {
     "MatchNumber": 48,
@@ -1049,8 +1068,17 @@
     "HomeTeam": "Netherlands",
     "AwayTeam": "Türkiye",
     "Group": "1/4",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 1,
+          "goals1": [{
+            "name":"De Vrij",
+            "minute":70},{
+            "name":"Müldür",
+            "owngoal":true,
+            "minute":76}],
+          "goals2": [{
+            "name":"Akaydin",
+            "minute":35}]
   }
   ,
    {
@@ -1060,11 +1088,19 @@
     "Location": "BVB Stadion",
     "HomeTeamStatus":"D1",
     "AwayTeamStatus":"F2",
-    "HomeTeam": "B1",
-    "AwayTeam": "B2",
+    "HomeTeam": "Spain",
+    "AwayTeam": "France",
     "Group": "1/2",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 1,
+          "goals1": [{
+            "name":"Yamal",
+            "minute":21},{
+            "name":"Olmo",
+            "minute":25}],
+          "goals2": [{
+            "name":"Muani",
+            "minute":9}]
   },
    {
     "MatchNumber": 50,
@@ -1076,6 +1112,19 @@
     "HomeTeam": "B3",
     "AwayTeam": "B4",
     "Group": "1/2",
+    "HomeTeamScore": null,
+    "AwayTeamScore": null
+  },
+     {
+    "MatchNumber": 51,
+    "RoundNumber": 7,
+    "DateUtc": "2024-07-14 22:00:00Z",
+    "Location": "BVB Stadion",
+    "HomeTeamStatus":"A1",
+    "AwayTeamStatus":"A2",
+    "HomeTeam": "Spain",
+    "AwayTeam": "B4",
+    "Group": "Final",
     "HomeTeamScore": null,
     "AwayTeamScore": null
   }
