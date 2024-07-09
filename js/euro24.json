@@ -1037,8 +1037,8 @@
     "HomeTeam": "England",
     "AwayTeam": "Switzerland",
     "Group": "1/4",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 1
   },
    {
     "MatchNumber": 48,
@@ -1050,8 +1050,8 @@
     "HomeTeam": "Netherlands",
     "AwayTeam": "Türkiye",
     "Group": "1/4",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 1
   }
   ,
    {
@@ -1061,8 +1061,8 @@
     "Location": "BVB Stadion",
     "HomeTeamStatus":"D1",
     "AwayTeamStatus":"F2",
-    "HomeTeam": "B1",
-    "AwayTeam": "B2",
+    "HomeTeam": "Spain",
+    "AwayTeam": "France",
     "Group": "1/2",
     "HomeTeamScore": null,
     "AwayTeamScore": null
@@ -1074,8 +1074,8 @@
     "Location": "BVB Stadion",
     "HomeTeamStatus":"D1",
     "AwayTeamStatus":"F2",
-    "HomeTeam": "B3",
-    "AwayTeam": "B4",
+    "HomeTeam": "Netherlands",
+    "AwayTeam": "England",
     "Group": "1/2",
     "HomeTeamScore": null,
     "AwayTeamScore": null
