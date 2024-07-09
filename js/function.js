@@ -19,17 +19,12 @@ export function onTopScoresList(data, team) {
   let i = 0;
   let goalPlayer = 0;
   let result = [{ name: null, team: null, goals: 0, penalty: 0 }];
-
   for (i = 0; data[i].HomeTeamScore !== null; i++) {
-    console.log(`data[${i}].HomeTeamScore- `, data[i].HomeTeamScore);
     data[i].goals1.forEach((goal) => {
-      console.log(`data[${i}].goals1- `, data[i].goals1);
       if (data[i].HomeTeamScore === null || data[i].HomeTeamScore === 0) return;
       if (goal.owngoal === true) return;
       if (data[i].HomeTeam !== team && team !== "all") return;
-      console.log("goal.name-", goal.name);
       goalPlayer = result.find((player) => player.name === goal.name);
-      console.log("goalPlayer-", goalPlayer);
       if (goalPlayer === undefined) {
         result.push({
           name: goal.name,
@@ -40,7 +35,6 @@ export function onTopScoresList(data, team) {
         goalPlayer.goals++;
       }
     });
-    console.log("data[i].goals2- ", data[i].goals2);
     data[i].goals2.forEach((goal) => {
       if (data[i].AwayTeamScore === null || data[i].AwayTeamScore === 0) return;
       if (goal.owngoal === true) return;
@@ -57,6 +51,5 @@ export function onTopScoresList(data, team) {
       }
     });
   }
-
   return result.slice(1).toSorted((a, b) => b.goals - a.goals);
 }
