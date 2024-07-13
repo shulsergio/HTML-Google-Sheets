@@ -55,6 +55,9 @@ textarea:focus {
     --main-color-yellow: #f9bf4b;
     --main-color-navy-blue:#213690;
     --main-color-blue:   #385ef3;
+    --dark-colour-black-fon:#181818;
+    --dark-colour-grey-fon: #aaa;
+
 }
 
 body {
@@ -79,7 +82,14 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
+.header.new-color-schem{
+    background-color: var(--dark-colour-black-fon);
+    color: #fff;
+}
+.section.new-color-schem {
+    background-color: var(--dark-colour-black-fon);
+    color: #fff;
+}
 html {
     scroll-behavior: smooth;
 }
