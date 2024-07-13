@@ -1112,8 +1112,18 @@
     "HomeTeam": "Netherlands",
     "AwayTeam": "England",
     "Group": "1/2",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
+    "HomeTeamScore": 1,
+    "AwayTeamScore": 2,
+     "goals1": [{
+            "name":"Simons",
+            "minute":7}],
+          "goals2": [{
+            "name":"Kane",
+            "minute":18,
+          "penalty":true},
+          {
+            "name":"Watkins",
+            "minute":90}]
   },
      {
     "MatchNumber": 51,
@@ -1123,7 +1133,7 @@
     "HomeTeamStatus":"A1",
     "AwayTeamStatus":"A2",
     "HomeTeam": "Spain",
-    "AwayTeam": "B4",
+    "AwayTeam": "England",
     "Group": "FINAL",
     "HomeTeamScore": null,
     "AwayTeamScore": null
