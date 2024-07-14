@@ -9,7 +9,7 @@ const allPlayers = [
     playerId: 2,
     group: "fantasy",
     playerName: "Dubrovin",
-    score: 244,
+    score: 246,
   },
   {
     playerId: 3,
@@ -27,7 +27,7 @@ const allPlayers = [
     playerId: 5,
     group: "fantasy",
     playerName: "Honcharuk",
-    score: 239,
+    score: 246,
   },
   {
     playerId: 6,
@@ -39,7 +39,7 @@ const allPlayers = [
     playerId: 7,
     group: "fantasy",
     playerName: "Krasnoruckyj",
-    score: 265,
+    score: 281,
   },
   {
     playerId: 8,
@@ -63,31 +63,31 @@ const allPlayers = [
     playerId: 11,
     group: "fantasy",
     playerName: "Lozytskyi",
-    score: 212,
+    score: 228,
   },
   {
     playerId: 12,
     group: "family",
     playerName: "Shulga S",
-    score: 253,
+    score: 269,
   },
   {
     playerId: 13,
     group: "fantasy",
     playerName: "Shulga S",
-    score: 253,
+    score: 269,
   },
   {
     playerId: 14,
     group: "family",
     playerName: "Tetiana",
-    score: 203,
+    score: 219,
   },
   {
     playerId: 15,
     group: "fantasy",
     playerName: "VetaL",
-    score: 217,
+    score: 219,
   },
   {
     playerId: 16,

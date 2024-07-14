@@ -823,9 +823,10 @@ font-size: 14px;
     padding: 10px 10px;
 align-content: center;
 text-align: center;
+color: #fff;
 }
-.twodin-list{
-    padding: 2px 10px;
+.tdin-list{
+    padding: 1px 10px;
 }
 
 .euro-data-title {
