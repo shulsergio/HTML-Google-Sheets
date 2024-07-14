@@ -1135,7 +1135,15 @@
     "HomeTeam": "Spain",
     "AwayTeam": "England",
     "Group": "FINAL",
-    "HomeTeamScore": null,
-    "AwayTeamScore": null
-  }
-]
+    "HomeTeamScore": 2,
+    "AwayTeamScore": 1,
+     "goals1": [{
+            "name":"Williams",
+            "minute":47},
+          {
+            "name":"Oyarzabal",
+            "minute":86}],
+          "goals2": [{
+            "name":"Palmer",
+            "minute":73}]
+  }]
